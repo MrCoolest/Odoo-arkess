@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+
+<!--    <template id="invoice_tax">-->
+<!--        <style type="text/css">-->
+<!--            th, tr, table, td{-->
+<!--            border: 2px solid black;-->
+<!--            }-->
+<!--        </style>-->
+<!--        <t t-call="web.html_container">-->
+<!--            <t t-call="web.external_layout">-->
+<!--                <div class="page">-->
+<!--                    <div class="oe_structure"/>-->
+<!--                    <div class="row">-->
+<!--                        &lt;!&ndash;                        <span>Patient: <t t-esc="data['patient_id'][1]"/></span>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="row">-->
+<!--                        <table class="table table-condensed">-->
+<!--                            <tbody>-->
+<!--                                <t t-foreach="docs" t-as="doc">-->
+
+<!--                                    <tr>-->
+<!--                                        <th>-->
+<!--                                            <t t-esc="doc.company_id.name"/>-->
+<!--                                            <br/>-->
+<!--                                            <t t-esc="doc.company_id.street"/>,-->
+<!--                                            <t t-esc="doc.company_id.street2"/>-->
+<!--                                            <br/>-->
+<!--                                            <t t-esc="doc.company_id.city"/>-->
+<!--                                            <t t-esc="doc.company_id.state_id.name"/>-->
+<!--                                            - -->
+<!--                                            <t t-esc="doc.company_id.zip"/>-->
+<!--                                            <br/>-->
+<!--                                            GSTIN/UIN:-->
+<!--                                            <t t-esc="doc.company_id.vat"/>-->
+<!--                                            <br/>-->
+<!--                                            State Name:<t t-esc="doc.company_id.state_id.name"/>, Code :-->
+<!--                                            <t t-esc="doc.company_id.state_id.l10n_in_tin"/>-->
+<!--                                            <br/>-->
+<!--                                            Email Id:-->
+<!--                                            <t t-esc="doc.company_id.email"/>-->
+<!--                                        </th>-->
+<!--                                        <th>-->
+<!--                                            <table>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Invoice No:-->
+<!--                                                        <br/>-->
+<!--                                                        <b>-->
+<!--                                                            <t t-esc="doc.sequence_number_next_prefix"/>-->
+<!--                                                        </b>-->
+<!--                                                    </td>-->
+
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Delivery Note :-->
+<!--                                                        <br/>-->
+<!--                                                        <br/>-->
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Supplier's Ref :-->
+<!--                                                        <br/>-->
+<!--                                                        <b>-->
+<!--                                                            <t t-esc="doc.name"/>-->
+<!--                                                        </b>-->
+
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                            </table>-->
+<!--                                        </th>-->
+<!--                                        <th>-->
+<!--                                            <table>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Dated-->
+<!--                                                        <br/>-->
+<!--                                                        <b>-->
+<!--                                                            <t t-esc="doc.date_invoice"/>-->
+<!--                                                        </b>-->
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Mode/Term Of Payment-->
+<!--                                                        <br/>-->
+<!--                                                        <b>-->
+<!--                                                            <t t-esc="doc.payment_term_id.name"/>-->
+<!--                                                            Days-->
+<!--                                                        </b>-->
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Other Reference(s) :-->
+<!--                                                        <br/>-->
+<!--                                                        <br/>-->
+<!--                                                        &lt;!&ndash;                                            <b> <t t-esc="doc.name"/> </b>&ndash;&gt;-->
+
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                            </table>-->
+<!--                                        </th>-->
+<!--                                    </tr>-->
+
+<!--                            &lt;!&ndash; Buyer Addresss  &ndash;&gt;-->
+<!--                                <tr>-->
+<!--                                    <th>-->
+<!--                                        Buyer <br/>-->
+<!--                                        <t t-esc="doc.partner_id.name"/>-->
+<!--                                        <br/>-->
+<!--                                        <t t-esc="doc.partner_id.street"/>,-->
+<!--                                        <br/>-->
+<!--                                        <t t-esc="doc.partner_id.city"/>-->
+<!--&lt;!&ndash;                                        <t t-esc="doc.partner_id.state_id.name"/>&ndash;&gt;-->
+<!--                                       - <t t-esc="doc.partner_id.zip"/>-->
+<!--                                        <br/>-->
+<!--                                        GSTIN/UIN:-->
+<!--                                        <t t-esc="doc.partner_id.vat"/>-->
+<!--                                        <br/>-->
+<!--                                        State Name:<t t-esc="doc.partner_id.state_id.name"/>, Code :-->
+<!--                                        <t t-esc="doc.partner_id.state_id.l10n_in_tin"/>-->
+<!--                                        <br/>-->
+<!--                                        Email Id:-->
+<!--                                        <t t-esc="doc.partner_id.email"/>-->
+<!--                                         <br/>-->
+<!--                                        Place Of Supply:-->
+<!--                                        <t t-esc="doc.partner_id.city"/>-->
+<!--                                    </th>-->
+
+<!--&lt;!&ndash;                          Buyer details          &ndash;&gt;-->
+<!--                                    <th>-->
+<!--                                            <table>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Buyer Order No:-->
+<!--                                                        <br/>-->
+<!--                                                        <br/>-->
+<!--                                                    </td>-->
+
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Despatch Document No :-->
+<!--                                                        <br/>-->
+<!--                                                        <br/>-->
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                                  <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Despatched Through :-->
+<!--                                                        <br/>-->
+<!--                                                      <b> Empty </b>-->
+
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                            </table>-->
+<!--                                        </th>-->
+<!--                                     <th>-->
+<!--                                            <table>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Dated:-->
+<!--                                                        <br/>-->
+<!--                                                        <b>-->
+<!--                                                            <t t-esc="doc.date_due"/>-->
+<!--                                                        </b>-->
+<!--                                                    </td>-->
+
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Delivery Note Date :-->
+<!--                                                        <br/>-->
+<!--                                                        <br/>-->
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+<!--                                                 <tr>-->
+<!--                                                    <td>-->
+<!--                                                        Destination:-->
+<!--                                                        <br/>-->
+<!--                                                        <b>Empty</b>-->
+<!--                                                    </td>-->
+<!--                                                </tr>-->
+
+<!--                                            </table>-->
+<!--                                        </th>-->
+
+
+<!--                                </tr>-->
+
+
+<!--                                 </t>-->
+<!--                            </tbody>-->
+<!--                        </table>-->
+<!--                        &lt;!&ndash;                        <table class="table table-condensed">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            <thead>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                <tr>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                    <th style="text-align:left;"><strong>Name </strong></th>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                    <th style="text-align:left;"><strong>Date </strong></th>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                    <th style="text-align:left;"><strong>Status </strong></th>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                    <th style="text-align:left;"><strong>Notes </strong></th>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                </tr>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            </thead>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            <tbody>&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;                                <t t-esc="pa.patient_name"/>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                <t t-esc="data"/>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                <t t-foreach="data" t-as="o">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                <t t-foreach="o.appointments" t-as="oe">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                    <tr>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        <td style="text-align:left;">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                            <t t-esc="oe['name']"/>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        </td>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        <td style="text-align:left;">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                            <t t-esc="oe['appointment_date']"/>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        </td>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                         <td style="text-align:left;">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                             <span t-field="oe.state"/>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        </td>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        <td style="text-align:left;">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                            <t t-esc="oe['notes']"/>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                        </td>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                    </tr>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                </t>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                </t>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            </tbody>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        </table>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </t>-->
+<!--        </t>-->
+<!--    </template>-->
+
+<!--    &lt;!&ndash;        <template id="report_invoice_taxes">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <t t-call="web.html_container">&ndash;&gt;-->
+<!--    &lt;!&ndash;            <t t-foreach="docs" t-as="doc">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h2>Hello World</h2>&ndash;&gt;-->
+<!--    &lt;!&ndash;            </t>&ndash;&gt;-->
+<!--    &lt;!&ndash;        </t>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </template>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    <template id="invoice_tax">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <t t-call="web.html_container">&ndash;&gt;-->
+<!--    &lt;!&ndash;            <t t-foreach="docs" t-as="doc">&ndash;&gt;-->
+<!--    &lt;!&ndash;&lt;!&ndash;                <t t-call="om_hospital.report_invoice_taxes"/>&ndash;&gt;&ndash;&gt;-->
+<!--    &lt;!&ndash;                           <h2>Hello World</h2>&ndash;&gt;-->
+
+
+<!--    &lt;!&ndash;            </t>&ndash;&gt;-->
+<!--    &lt;!&ndash;        </t>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </template>&ndash;&gt;-->
+
+<!--</odoo>-->
+
+
+<odoo>
+
+    <template id="invoice_tax">
+
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="row">
+                        <!--                        <span>Patient: <t t-esc="data['patient_id'][1]"/></span>-->
+                    </div>
+                    <div class="row">
+                        <style type="text/css">
+                            *{
+                            margin: 0;
+                            padding: 0;
+                            }
+                            div > *{
+                            box-sizing: border-box;
+                            }
+
+                            .table {
+
+                            border : 2px solid black;
+                            width:100%;
+                            .table:last-child{
+                                height: 200px;
+                            }
+                            }
+                            .outside_div{
+                            border: 2px solid black;
+                            padding : 10px;
+                            }
+                            .order_detail_table{
+                                border-spacing: 5px;
+                                float:right;
+
+                            height:100%;
+                            }
+                            .order_detail_table tr td{
+                                padding: auto;
+                                border : 1px solid black;
+                            }
+                            .items_table{
+                            width:100%;
+                            border : 2px solid black;
+                            }
+                            .items_table tr th, .items_table tr td{
+                            border: 2px solid black;
+                            }
+                            .items_table_header:nth-child(1){
+                            width:5%;
+                            }
+                            .items_table_header:nth-child(6){
+                            width:10%;
+                            }
+                            .items_table_header:nth-child(2){
+                            width:45%;
+                            }
+                            .items_table_header:nth-child(3),
+                            .items_table_header:nth-child(4),
+                            .items_table_header:nth-child(5),
+                            .items_table_header:nth-child(7){
+                            width:10%;
+                            }
+                            .prod_bottom{
+                                border:2px solid black;
+                            }
+                        </style>
+                        <t t-foreach="docs" t-as="doc">
+
+                            <div class="outside_div">
+                                <center>
+                                    <h2>Tax Invoice</h2>
+                                </center>
+                                <table class="table table-condensed">
+                                    <tbody>
+
+                                        <tr>
+                                            <th>
+                                                <t t-esc="doc.company_id.name"/>
+                                                <br/>
+                                                <t t-esc="doc.company_id.street"/>,
+                                                <t t-esc="doc.company_id.street2"/>
+                                                <br/>
+                                                <t t-esc="doc.company_id.city"/>
+                                                <t t-esc="doc.company_id.state_id.name"/>
+                                                -
+                                                <t t-esc="doc.company_id.zip"/>
+                                                <br/>
+                                                GSTIN/UIN:
+                                                <t t-esc="doc.company_id.vat"/>
+                                                <br/>
+                                                State Name:<t t-esc="doc.company_id.state_id.name"/>, Code :
+                                                <t t-esc="doc.company_id.state_id.l10n_in_tin"/>
+                                                <br/>
+                                                Email Id:
+                                                <t t-esc="doc.company_id.email"/>
+
+                                                <hr/>
+                                                Buyer
+                                                <br/>
+                                                <t t-esc="doc.partner_id.name"/>
+                                                <br/>
+                                                <t t-esc="doc.partner_id.street"/>,
+                                                <br/>
+                                                <t t-esc="doc.partner_id.city"/>
+                                                <!--                                        <t t-esc="doc.partner_id.state_id.name"/>-->
+                                                -
+                                                <t t-esc="doc.partner_id.zip"/>
+                                                <br/>
+                                                GSTIN/UIN:
+                                                <t t-esc="doc.partner_id.vat"/>
+                                                <br/>
+                                                State Name:<t t-esc="doc.partner_id.state_id.name"/>, Code :
+                                                <t t-esc="doc.partner_id.state_id.l10n_in_tin"/>
+                                                <br/>
+                                                Email Id:
+                                                <t t-esc="doc.partner_id.email"/>
+                                                <br/>
+                                                Place Of Supply:
+                                                <t t-esc="doc.partner_id.city"/>
+                                            </th>
+                                            <th>
+                                                <table class="order_detail_table">
+                                                    <tr>
+                                                        <td>
+                                                            Invoice No:
+                                                            <br/>
+                                                            <b>
+                                                                <t t-esc="doc.sequence_number_next_prefix"/>
+                                                                <t t-esc="doc.sequence_number_next"/>
+                                                            </b>
+                                                        </td>
+                                                        <td>
+                                                            Dated :
+                                                            <br/>
+                                                            <b>
+                                                                <t t-esc="doc.date_invoice"/>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Delivery Note :
+                                                            <br/>
+                                                            <br/>
+                                                        </td>
+                                                        <td>
+                                                            Mode/Term of Payment :
+                                                            <br/>
+                                                            <b>
+                                                                <t t-esc="doc.payment_term_id.name"/>
+                                                                Days
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Supplier's Ref :
+                                                            <br/>
+                                                            <b>
+                                                                <t t-esc="doc.name"/>
+                                                            </b>
+
+                                                        </td>
+                                                        <td>
+                                                            Other Reference(s):
+                                                            <br/>
+                                                            <br/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Buyer's Order No :
+                                                            <br/>
+                                                            <br/>
+
+
+                                                        </td>
+                                                        <td>
+                                                            Dated:
+                                                            <br/>
+                                                            <b>
+                                                                <t t-esc="doc.date_due"/>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Despatch Document No :
+                                                            <br/>
+                                                            <br/>
+
+                                                        </td>
+                                                        <td>
+                                                            Delivery Note Date:
+                                                            <br/>
+                                                            <br/>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Despatched Through :
+                                                            <br/>
+                                                            <br/>
+
+                                                        </td>
+                                                        <td>
+                                                            Destination:
+                                                            <br/>
+                                                            <br/>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr height="100px"  rowspan="2">
+                                                        <td colspan="2" >
+                                                            Term of Delivery
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+<!--                                                <div class="Term_div">-->
+<!--                                                    Term of Delivery-->
+<!--                                                </div>-->
+                                            </th>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <table class="items_table">
+                                    <tr class="items_table_header">
+                                        <th>Sr No</th>
+                                        <th>Description of Good</th>
+                                        <th>HSN/SAC</th>
+                                        <th>Qunatity</th>
+                                        <th>Rate</th>
+                                        <th>Per</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                    <t t-set="i" t-value="1"/>
+                                    <t t-set="total_qty" t-value="0"/>
+                                   <t t-foreach="doc.invoice_line_ids" t-as="prod">
+                                             <tr>
+                                        <td><span t-esc="i"/> </td>
+                                        <td><t t-esc="prod.product_id.name"/></td>
+                                        <td><t t-esc="prod.product_id.l10n_in_hsn_code"/></td>
+                                        <td><t t-esc="prod.quantity"/></td>
+                                        <td><t t-esc="prod.price_unit"/></td>
+                                        <td>nos</td>
+                                        <td><t t-esc="prod.price_subtotal"/></td>
+
+                                    </tr>
+                                       <t t-set="total_qty" t-value="total_qty+prod.quantity"/>
+                                        <t t-set="i" t-value="i+1"/>
+                                   </t>
+
+                                    <tr class="prod_bottom">
+                                        <td></td>
+                                        <td>Untaxed Amount <br/><hr/> Tax Amount</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><t t-esc="doc.amount_untaxed"/> <br/><hr/> <t t-esc="doc.amount_tax"/>  </td>
+                                    </tr>
+                                    <tr class="prod_bottom">
+                                        <td></td>
+                                        <td>Total</td>
+                                        <td></td>
+                                        <td><span t-esc="total_qty"/></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><t t-esc="doc.amount_total"/></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </t>
+
+
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+
+
+</odoo>

@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hospital_patient,access.hospital.patient,model_hospital_patient,,1,1,1,1
+access_hospital_appointment,access.hospital.appointment,model_hospital_appointment,,1,1,1,1
+access_hospital_doctor,access.hospital.doctor,model_hospital_doctor,,1,1,1,1
+access_sale_quotations_new,access.sale.quotaion.new,model_sale_quotaion_new,,1,1,1,1
+access_sale_quotations_new_own,access.sale.quotaion.new.own,model_sale_quotaion_new,sales_team.group_sale_salesman,1,1,1,0
+access_sale_quotations_new_own_line,access.sale.quotaion.new.line.own,model_sale_quotation_new_line,sales_team.group_sale_salesman,1,1,1,0
+access_sale_quotations_new_all,access.sale.quotaion.new.all,model_sale_quotaion_new,sales_team.group_sale_salesman_all_leads,1,0,1,0
+access_sale_quotations_new_all_line,access.sale.quotaion.new.line.all,model_sale_quotation_new_line,sales_team.group_sale_salesman_all_leads,1,0,1,0
+access_sale_quotations_new_manager,access.sale.quotaion.new.manager,model_sale_quotaion_new,sales_team.group_sale_manager,1,1,1,1
+access_sale_quotations_new_manager_line,access.sale.quotaion.new.manager.line,model_sale_quotation_new_line,sales_team.group_sale_manager,1,1,1,1
+access_sale_quotations_amendemt_new,access.sale.quotaion.amendment.new,model_sale_quotaion_ambedment_new,,1,1,1,1
+access_sale_quotations_amendemt_new_line,access.sale.quotaion.amendment.new,model_sale_quotation_ambedment_new_line,,1,1,1,1

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<odoo>
+
+
+    <!-- Search View of Parameters   -->
+         <record id="paramenter_search" model="ir.ui.view">
+            <field name="name">parameter.tree.search</field>
+            <field name="model">para.tree</field>
+            <field name="arch" type="xml">
+                <search string="Search parameters">
+                    <field name="parameter" filter_domain="[('parameter', 'ilike', self)]" />
+                </search>
+            </field>
+        </record>
+
+    <!-- tree view of the parameter Model -->
+     <record id="paramenter_tree" model="ir.ui.view">
+            <field name="name">para.tree.tree_</field>
+            <field name="model">para.tree</field>
+            <field name="arch" type="xml">
+                <tree string="Student" editable="top">
+                    <field name="parameter" />
+                    <field name="para_val" />
+                </tree>
+            </field>
+        </record>
+
+
+<!--   !&#45;&#45; Action of the patient menu   &ndash;&gt;-->
+    <record id="action_para" model="ir.actions.act_window">
+        <field name="name">Parameter</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">para.tree</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your Parameters
+            </p>
+        </field>
+    </record>
+
+
+        <menuitem id="para_tree" name="Parameters" parent="hospital_root" action="action_para" sequence="7"/>
+
+</odoo>
