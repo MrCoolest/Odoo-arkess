@@ -1,0 +1,816 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* om_hospital
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-28 07:43+0000\n"
+"PO-Revision-Date: 2022-06-28 07:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_form
+msgid "(A)Appointment"
+msgstr "(A)Appointment"
+
+#. module: om_hospital
+#: model:mail.template,body_html:om_hospital.patient_card_email_template
+msgid "<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Dear ${object.patient_name}\n"
+"                        <br/><br/>\n"
+"                        Here is your patient card with reference ${object.name_seq}\n"
+"                        <br/><br/>\n"
+"                        Age : ${object.patient_age}\n"
+"                        Contact Number : ${object.name}\n"
+"                        <br/><br/>\n"
+"                        If you have queries feel free to ask.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr "<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Dear ${object.patient_name}\n"
+"                        <br/><br/>\n"
+"                        Here is your patient card with reference ${object.name_seq}\n"
+"                        <br/><br/>\n"
+"                        Age : ${object.patient_age}\n"
+"                        Contact Number : ${object.name}\n"
+"                        <br/><br/>\n"
+"                        If you have queries feel free to ask.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.report_patient
+msgid "<strong>Age: </strong>"
+msgstr "<strong>Age: </strong>"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_report
+msgid "<strong>Date </strong>"
+msgstr "<strong>Date </strong>"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.report_patient
+msgid "<strong>Group: </strong>"
+msgstr "<strong>Group: </strong>"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_report
+msgid "<strong>Name </strong>"
+msgstr "<strong>Name </strong>"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_report
+msgid "<strong>Notes </strong>"
+msgstr "<strong>Notes </strong>"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.report_patient
+msgid "<strong>Ph No: </strong>"
+msgstr "<strong>Ph No: </strong>"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_report
+msgid "<strong>Status </strong>"
+msgstr "<strong>Status </strong>"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_active
+msgid "Active"
+msgstr "Active"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_patient_age
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_patient_age
+msgid "Age"
+msgstr "Age"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_kanban
+msgid "Age :"
+msgstr "Age :"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_age_group
+msgid "Age group"
+msgstr "Age group"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_patient_age_2
+msgid "Age2"
+msgstr "Age2"
+
+#. module: om_hospital
+#: code:addons/om_hospital/models/patient.py:59
+#: model:ir.actions.act_window,name:om_hospital.action_appointment
+#: model:ir.actions.act_window,name:om_hospital.open_patient_appointment
+#: model:ir.actions.report,name:om_hospital.report_appointment
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_appointment_count
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+#: model:ir.ui.view,arch_db:om_hospital.appointment_pivot
+#: model:ir.ui.view,arch_db:om_hospital.appointment_tree
+#: model:ir.ui.view,arch_db:om_hospital.patient_form
+#, python-format
+msgid "Appointment"
+msgstr "Appointment"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_calendar
+msgid "Appointment Calendar"
+msgstr "Appointment Calendar"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_appointment_date
+msgid "Appointment Date"
+msgstr "Appointment Date"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_graph
+msgid "Appointment Graph"
+msgstr "Appointment Graph"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_notes
+msgid "Appointment Notes"
+msgstr "Appointment Notes"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_hospital_appointment
+msgid "Appointment Record"
+msgstr "Appointment Record"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_report_om_hospital_appointment_report
+msgid "Appointment Report"
+msgstr "Appointment Report"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_name
+msgid "Appointment id"
+msgstr "Appointment id"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_hospital_appointment_lines
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_appointment_lines
+msgid "Appointment lines"
+msgstr "Appointment lines"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_appointment_id
+msgid "Appointment_id"
+msgstr "Appointment_id"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.action_patient_appoitnment
+msgid "Appointments"
+msgstr "Appointments"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.hospital_patient_search
+msgid "Archive"
+msgstr "Archive"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_kanban
+msgid "Avatar"
+msgstr "Avatar"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_tree
+msgid "Average_of_age"
+msgstr "Average_of_age"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.dashboard_form_view
+msgid "Book Appointment"
+msgstr "Book Appointment"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.act_book_appointment
+msgid "Book Appointments"
+msgstr "Book Appointments"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_res_config_settings_module_crm
+msgid "CRM"
+msgstr "CRM"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.create_appointment_form
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: om_hospital
+#: selection:hospital.appointment,state:0
+msgid "Cancelled"
+msgstr "Cancelled"
+
+#. module: om_hospital
+#: model:ir.module.category,description:om_hospital.module_category_hospital
+msgid "Category For Hospital"
+msgstr "Category For Hospital"
+
+#. module: om_hospital
+#: model:ir.actions.server,name:om_hospital.test_patient_cron_ir_actions_server
+#: model:ir.cron,cron_name:om_hospital.test_patient_cron
+#: model:ir.cron,name:om_hospital.test_patient_cron
+msgid "Check Patient Status"
+msgstr "Check Patient Status"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.hospital_Configration
+msgid "Configration"
+msgstr "Configration"
+
+#. module: om_hospital
+#: selection:hospital.appointment,state:0
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Confirm"
+msgstr "Confirm"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.create_appointment_form
+msgid "Create"
+msgstr "Create"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.create_appointment_wizard
+#: model:ir.ui.view,arch_db:om_hospital.create_appointment_form
+msgid "Create Appointment"
+msgstr "Create Appointment"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.create_appointment
+msgid "Create appointment"
+msgstr "Create appointment"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,help:om_hospital.action_appointment
+msgid "Create your Appointment"
+msgstr "Create your Appointment"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,help:om_hospital.action_doctor
+msgid "Create your First Doctor !"
+msgstr "Create your First Doctor !"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,help:om_hospital.action_lab
+msgid "Create your Lab !"
+msgstr "Create your Lab !"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,help:om_hospital.action_patient
+msgid "Create your Patient!"
+msgstr "Create your Patient!"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_create_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_create_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_create_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_create_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_create_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_create_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_create_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_create_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_create_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_create_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_partner_id
+msgid "Customer"
+msgstr "Customer"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.hospital_dashboard
+#: model:ir.ui.menu,name:om_hospital.menu_dashboard
+#: model:ir.ui.view,arch_db:om_hospital.dashboard_form_view
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_appointment_date
+msgid "Date"
+msgstr "Date"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_appointment_datetime
+msgid "Date Time"
+msgstr "Date Time"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_res_config_settings_note
+#: model:ir.ui.view,arch_db:om_hospital.res_config_settings_view_form
+msgid "Default Note"
+msgstr "Default Note"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Delete"
+msgstr "Delete"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.create_appointment_form
+msgid "Delete Patient"
+msgstr "Delete Patient"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_report_om_hospital_report_patient_display_name
+#: model:ir.model.fields,field_description:om_hospital.field_report_om_hospital_report_patient_xls_display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.action_doctor
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_doctor_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_doctor_id
+#: model:ir.ui.menu,name:om_hospital.hospital_doctor
+#: model:res.groups,name:om_hospital.group_hospital_doctor
+msgid "Doctor"
+msgstr "चिकित्सक"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_kanban
+msgid "Doctor :"
+msgstr "चिकित्सक :"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_doctor_gender
+msgid "Doctor Gender"
+msgstr "चिकित्सक Gender"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_doctor_note
+msgid "Doctor Note"
+msgstr "चिकित्सक Note"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Doctor Prescription"
+msgstr "चिकित्सक Prescription"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_hospital_doctor
+#: model:ir.ui.view,arch_db:om_hospital.doctor_tree
+msgid "Doctors"
+msgstr "चिकित्सक"
+
+#. module: om_hospital
+#: selection:hospital.appointment,state:0
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Done"
+msgstr "Done"
+
+#. module: om_hospital
+#: selection:hospital.appointment,state:0
+msgid "Draft"
+msgstr "Draft"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_email_id
+msgid "Email"
+msgstr "Email"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_kanban
+msgid "Email :"
+msgstr "Email :"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_appointment_date_end
+msgid "End Date"
+msgstr "End Date"
+
+#. module: om_hospital
+#: selection:hospital.doctor,gender:0
+#: selection:hospital.patient,doctor_gender:0
+#: selection:hospital.patient,gender:0
+#: model:ir.ui.view,arch_db:om_hospital.hospital_patient_search
+msgid "Female"
+msgstr "Female"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_gender
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_gender
+msgid "Gender"
+msgstr "Gender"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.create_appointment_form
+msgid "Get Data"
+msgstr "Get Data"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.hospital_patient_search
+msgid "Group By"
+msgstr "Group By"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patients_page
+msgid "Hey Subscribe the channel .. !"
+msgstr "Hey Subscribe the channel .. !"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.hospital_root
+#: model:ir.ui.view,arch_db:om_hospital.res_config_settings_view_form
+msgid "Hospital"
+msgstr "Hospital"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.res_config_settings_view_form
+msgid "Hospital CRM"
+msgstr "Hospital CRM"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_hospital_lab
+msgid "Hospital Lab"
+msgstr "Hospital Lab"
+
+#. module: om_hospital
+#: model:ir.module.category,name:om_hospital.module_category_hospital
+#: model:ir.ui.view,arch_db:om_hospital.res_config_settings_view_form
+msgid "Hospital Management"
+msgstr "Hospital Management"
+
+#. module: om_hospital
+#: code:addons/om_hospital/models/patient.py:82
+#, python-format
+msgid "Hospital Server Action"
+msgstr "Hospital Server Action"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.action_hospital_config_settings
+msgid "Hospital Settings"
+msgstr "Hospital Settings"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_id
+#: model:ir.model.fields,field_description:om_hospital.field_report_om_hospital_report_patient_id
+#: model:ir.model.fields,field_description:om_hospital.field_report_om_hospital_report_patient_xls_id
+msgid "ID"
+msgstr "ID"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_image
+msgid "Image"
+msgstr "Image"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.action_lab
+#: model:ir.ui.view,arch_db:om_hospital.lab_tree
+msgid "Lab"
+msgstr "Lab"
+
+#. module: om_hospital
+#: model:res.groups,name:om_hospital.group_hospital_lab_manager
+msgid "Lab Assistant Manger"
+msgstr "Lab Assistant Manger"
+
+#. module: om_hospital
+#: model:res.groups,name:om_hospital.group_hospital_lab
+msgid "Lab Assistant user"
+msgstr "Lab Assistant user"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_report_om_hospital_report_patient___last_update
+#: model:ir.model.fields,field_description:om_hospital.field_report_om_hospital_report_patient_xls___last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_write_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_write_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_write_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_write_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_write_uid
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_write_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_write_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_write_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_write_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_write_date
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: om_hospital
+#: selection:hospital.patient,age_group:0
+msgid "Major"
+msgstr "Major"
+
+#. module: om_hospital
+#: selection:hospital.doctor,gender:0
+#: selection:hospital.patient,doctor_gender:0
+#: selection:hospital.patient,gender:0
+#: model:ir.ui.view,arch_db:om_hospital.hospital_patient_search
+msgid "Male"
+msgstr "Male"
+
+#. module: om_hospital
+#: model:res.groups,name:om_hospital.group_hospital_manager
+msgid "Manager"
+msgstr "Manager"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_product_id
+msgid "Medicine"
+msgstr "Medicine"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_res_config_settings_product_ids
+#: model:ir.ui.view,arch_db:om_hospital.res_config_settings_view_form
+msgid "Medicines"
+msgstr "Medicines"
+
+#. module: om_hospital
+#: selection:hospital.patient,age_group:0
+msgid "Minor"
+msgstr "Minor"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_name
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_patient_name
+#: model:ir.ui.view,arch_db:om_hospital.patients_page
+msgid "Name"
+msgstr "Name"
+
+#. module: om_hospital
+#: code:addons/om_hospital/models/appointment.py:15
+#: code:addons/om_hospital/models/appointment.py:16
+#: code:addons/om_hospital/models/appointment.py:95
+#: code:addons/om_hospital/models/patient.py:144
+#: code:addons/om_hospital/models/patient.py:158
+#: code:addons/om_hospital/models/patient.py:159
+#, python-format
+msgid "New"
+msgstr "New"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_notes
+msgid "Notes"
+msgstr "Notes"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Notify"
+msgstr "Notify"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_user_id
+msgid "PRO"
+msgstr "PRO"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_create_appointment_patient_id
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_patient_id
+msgid "Patient"
+msgstr "Patient"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.act_patient_appointments
+#: model:ir.ui.view,arch_db:om_hospital.dashboard_form_view
+msgid "Patient Appointments"
+msgstr "Patient Appointments"
+
+#. module: om_hospital
+#: model:ir.actions.report,name:om_hospital.report_patient_card
+msgid "Patient Card"
+msgstr "Patient Card"
+
+#. module: om_hospital
+#: model:mail.template,subject:om_hospital.patient_card_email_template
+msgid "Patient Card (Ref ${object.name_sequence})"
+msgstr "Patient Card (Ref ${object.name_sequence})"
+
+#. module: om_hospital
+#: model:ir.actions.report,name:om_hospital.report_patient_card_xlsx
+msgid "Patient Card Excel"
+msgstr "Patient Card Excel"
+
+#. module: om_hospital
+#: model:mail.template,report_name:om_hospital.patient_card_email_template
+msgid "Patient Card_${(object.name_sequence)}"
+msgstr "Patient Card_${(object.name_sequence)}"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_sale_order_patient_name
+msgid "Patient Name"
+msgstr "Patient Name"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_hospital_patient
+msgid "Patient Record"
+msgstr "Patient Record"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.dashboard_form_view
+msgid "Patient Records"
+msgstr "Patient Records"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_name_sequence
+msgid "Patient Refrence"
+msgstr "Patient Refrence"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_patient_name_upper
+msgid "Patient Upper Name"
+msgstr "Patient Upper Name"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_report_om_hospital_report_patient
+msgid "Patient card Report"
+msgstr "Patient card Report"
+
+#. module: om_hospital
+#: model:ir.actions.server,name:om_hospital.hospitat_patient_action
+msgid "Patient server Action"
+msgstr "Patient server Action"
+
+#. module: om_hospital
+#: model:ir.actions.act_window,name:om_hospital.act_patient_list
+#: model:ir.actions.act_window,name:om_hospital.action_patient
+#: model:ir.ui.menu,name:om_hospital.hospital_patient
+#: model:ir.ui.view,arch_db:om_hospital.doctor_form
+#: model:ir.ui.view,arch_db:om_hospital.lab_form
+#: model:ir.ui.view,arch_db:om_hospital.patient_form
+#: model:ir.ui.view,arch_db:om_hospital.patient_tree
+msgid "Patients"
+msgstr "Patients"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Pharmacy"
+msgstr "Pharmacy"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_pharmacy_note
+msgid "Pharmacy Note"
+msgstr "Pharmacy Note"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.create_appointment_form
+#: model:ir.ui.view,arch_db:om_hospital.patient_form
+msgid "Print"
+msgstr "Print"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_form
+msgid "Print Excel"
+msgstr "Print Excel"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_product_qty
+msgid "Quantity"
+msgstr "Quantity"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_sale_order
+msgid "Quotation"
+msgstr "Quotation"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.appointment_form
+msgid "Record Set Operations"
+msgstr "Record Set Operations"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_patient_id
+msgid "Related Patient"
+msgstr "Related Patient"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_related_patient_id
+msgid "Related Patient ID"
+msgstr "Related Patient ID"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_doctor_user_id
+msgid "Related User"
+msgstr "Related User"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_lab_user_id
+msgid "Responsible"
+msgstr "Responsible"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_order_id
+msgid "Sale Order"
+msgstr "Sale Order"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.hospital_patient_search
+msgid "Search Patients"
+msgstr "Search Patients"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.patient_form
+msgid "Send By Email"
+msgstr "Send By Email"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_lines_sequence
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.hospital_patient_server_action_menu
+msgid "Server Action"
+msgstr "Server Action"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_state
+msgid "Status"
+msgstr "Status"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_patient_name
+msgid "Test"
+msgstr "Test"
+
+#. module: om_hospital
+#: model:ir.model.fields,field_description:om_hospital.field_hospital_appointment_amount
+msgid "Total Amount"
+msgstr "Total Amount"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.hospital_appointment
+msgid "appointment"
+msgstr "appointment"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_create_appointment
+msgid "create.appointment"
+msgstr "create.appointment"
+
+#. module: om_hospital
+#: model:ir.ui.view,arch_db:om_hospital.hospital_patient_search
+msgid "gender"
+msgstr "gender"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.hospital_lab
+msgid "lab"
+msgstr "lab"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_report_om_hospital_report_patient_xls
+msgid "report.om_hospital.report_patient_xls"
+msgstr "report.om_hospital.report_patient_xls"
+
+#. module: om_hospital
+#: model:ir.model,name:om_hospital.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: om_hospital
+#: model:ir.ui.menu,name:om_hospital.hospital_settings
+msgid "settings"
+msgstr "settings"
+

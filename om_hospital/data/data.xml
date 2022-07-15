@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+<!--     <data>-->
+<!--        <record model="res.config.settings" id="res_config_settings">-->
+<!--            <field name="group_product_variant" eval="1"/>-->
+<!--        </record>-->
+
+<!--        <function model="res.config.settings" name="execute">-->
+<!--            <value eval="[ref('res_config_settings')]"/>-->
+<!--            <value eval="{}"/>-->
+<!--        </function>-->
+<!--    </data>-->
+
+    <data noupdate="1">
+        <record id="patient_xyz" model="hospital.patient">
+        <field name="patient_name">XYZ</field>
+        <field name="patient_age">19</field>
+        <field name="name">Chota_xyz</field>
+        <field name="gender">fe_male</field>
+        <field name="notes">Testing the Data From XML</field>
+       </record>
+    </data>
+
+    <data noupdate="1">
+        <record id="appointment_xyz" model="hospital.appointment">
+        <field name="patient_id" ref="patient_xyz" />
+        <field name="notes">Appointment is Ready</field>
+        <field name="appointment_date">07/21/2022</field>
+       </record>
+    </data>
+
+     <record id="test_patient_cron" model="ir.cron">
+            <field name="name">Check Patient Status</field>
+            <field name="model_id" ref="model_hospital_patient"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.test_cron_job()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+<!--    <delete id="mrp.mrp_routing_workcenter_rule" model="ir.rule"/>-->
+<!--    <delete id="calendar.calendar_template_meeting_changedate" model="mail.template"/>-->
+
+</odoo>
